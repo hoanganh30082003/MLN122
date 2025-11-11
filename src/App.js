@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Nav from './components/Nav';
+import HistoryScreen from './components/HistoryScreen';
+import ReformScreen from './components/ReformScreen';
+import FactoryScreen from './components/FactoryScreen';
+import RegionalScreen from './components/RegionalScreen';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Navigate to="/screen-2" replace />} />
+        <Route path="/screen-2" element={<HistoryScreen />} />
+        <Route path="/screen-3" element={<ReformScreen />} />
+        <Route path="/phase-2" element={<RegionalScreen />} />
+        <Route path="/factory" element={<FactoryScreen />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
