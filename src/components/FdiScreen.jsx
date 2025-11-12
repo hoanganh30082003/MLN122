@@ -172,7 +172,7 @@ export default function FdiScreen() {
     <section ref={wrapRef} className={`fdi-wrap ${inView ? "is-in" : ""}`}>
       <div className="container">
         <header className="fdi-head">
-          <h2 className="fdi-title">Màn hình 7 · Dòng Vốn FDI — “Đại Bàng Lót Tổ”</h2>
+          <h2 className="fdi-title">Dòng Vốn FDI — “Đại Bàng Lót Tổ”</h2>
           <p className="fdi-sub">
             Làn sóng vốn ngoại dịch chuyển về Việt Nam giai đoạn hội nhập sâu rộng,
             với các đại bàng công nghệ, sản xuất và tài chính đặt nền tảng cho chuỗi

@@ -11,12 +11,12 @@ import AgroScreen from './components/AgroScreen';
 import Screen11 from './components/Screen11';
 import Screen12 from './components/Screen12';
 import CoverScreen from './components/CoverScreen';
-import ConclusionScreen from './components/ConclusionScreen'; 
+import ConclusionScreen from './components/ConclusionScreen';
 import FdiScreen from "./components/FdiScreen";
 import BrandScreen from "./components/BrandScreen";
 function AppContent() {
   const location = useLocation();
-  const isCoverPage = location.pathname === '/screen-1' || location.pathname === '/conclusion';
+  const isCoverPage = location.pathname === '/opening' || location.pathname === '/conclusion';
 
   return (
     <>
@@ -24,19 +24,19 @@ function AppContent() {
 
       <Routes>
         <Route path="/" element={<Navigate to="/screen-1" replace />} />
-        <Route path="/screen-1" element={<CoverScreen />} />
-        <Route path="/screen-2" element={<HistoryScreen />} />
-        <Route path="/screen-3" element={<ReformScreen />} />
-        <Route path="/phase-2" element={<RegionalScreen />} />
-        <Route path="/factory" element={<FactoryScreen />} />
-        <Route path="/fdi" element={<FdiScreen />} />
-        <Route path="/future" element={<FutureScreen />} />
-        <Route path="/agro" element={<AgroScreen />} />
-        <Route path="/screen-11" element={<Screen11/>}/>
-        <Route path="/screen-12" element={<Screen12/>}/>
+        <Route path="/opening" element={<CoverScreen />} />
+        <Route path="/historical-context" element={<HistoryScreen />} />
+        <Route path="/opening-era" element={<ReformScreen />} />
+        <Route path="/regional-integration" element={<RegionalScreen />} />
+        <Route path="/global-supply-chain" element={<FactoryScreen />} />
+        <Route path="/fdi-investment" element={<FdiScreen />} />
+        <Route path="/future-economy" element={<FutureScreen />} />
+        <Route path="/agricultural-exports" element={<AgroScreen />} />
+        <Route path="/social-impact" element={<Screen11 />} />
+        <Route path="/challenges-ahead" element={<Screen12 />} />
         <Route path="/conclusion" element={<ConclusionScreen />} />
-<Route path="/brands" element={<BrandScreen />} />
-      </Routes> 
+        <Route path="/vietnamese-brands" element={<BrandScreen />} />
+      </Routes>
     </>
   );
 }

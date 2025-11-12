@@ -24,14 +24,14 @@ export default function FutureScreen(){
                 <div className="ring" style={{ "--val":"48%" }} />
                 <div className="kpi-text">
                   <div className="kpi-num">48%</div>
-                  <div className="kpi-cap">Tỷ trọng kinh tế số/GDP (mục tiêu tham khảo)</div>
+                  <div className="kpi-cap">Tỷ trọng kinh tế số/GDP</div>
                 </div>
               </div>
               <div className="kpi" aria-label="Mục tiêu năng lượng tái tạo">
                 <div className="ring green" style={{ "--val":"35%" }} />
                 <div className="kpi-text">
                   <div className="kpi-num">35%</div>
-                  <div className="kpi-cap">Tỷ trọng năng lượng tái tạo (tham khảo)</div>
+                  <div className="kpi-cap">Tỷ trọng năng lượng tái tạo</div>
                 </div>
               </div>
             </div>

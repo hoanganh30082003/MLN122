@@ -4,19 +4,28 @@ import { motion } from "framer-motion";
 
 
 const PAGES = [
-  { path: "/screen-2", label: "Bối cảnh lịch sử" },
-  { path: "/screen-3", label: "Bình minh mở cửa" },
-  { path: "/phase-2", label: "Vươn Ra Khu Vực" },
-  { path: "/factory",  label: `"Công Xưởng" Mới` },
-  { path: "/fdi",      label: "Dòng vốn FDI" },
-  { path: "/brands", label: "Thương Hiệu Việt" },
-  { path: "/future",   label: "Tương lai Việt Nam" },
-  { path: "/agro",     label: "Nông nghiệp & Công nghệ" },
-  { path: "/screen-11", label: "Gặt hái trái ngọt"},
-  { path: "/screen-12", label: "Chông gai phía trước"},
+  // PHẦN II: HÀNH TRÌNH HỘI NHẬP
+  { path: "/opening", label: "Giới Thiệu" },            // Màn 1
+  { path: "/historical-context", label: "Bối Cảnh Lịch Sử" },    // Màn 2
+  { path: "/opening-era", label: "Thời Kỳ Mở Cửa" },       // Màn 3
+  { path: "/regional-integration", label: "Hội Nhập Khu Vực" },   // Màn 4
+  // (Màn 5 & 6 là các giai đoạn tiếp theo của Timeline)
+
+  // PHẦN III: VIỆT NAM - MẮT XÍCH QUAN TRỌNG
+  { path: "/fdi-investment", label: "Dòng Vốn FDI" },          // Màn 7
+  { path: "/global-supply-chain", label: "Chuỗi Cung Ứng Toàn Cầu" }, // Màn 8
+  { path: "/agricultural-exports", label: "Nông Sản Vươn Tầm" },   // Màn 9
+  { path: "/vietnamese-brands", label: "Thương Hiệu Việt" },      // Màn 10
+
+  // PHẦN IV: PHÂN TÍCH & TƯƠNG LAI
+  { path: "/social-impact", label: "Tác Động Tích Cực" },      // Màn 11
+  { path: "/challenges-ahead", label: "Thách Thức Phía Trước" },    // Màn 12
+  { path: "/future-economy", label: "Kinh Tế Tương Lai" },     // Màn 13
+  { path: "/conclusion", label: "Kết Luận" }           // Màn 14
+
 ];
 
-export default function Nav(){
+export default function Nav() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -34,13 +43,13 @@ export default function Nav(){
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: .5 }}
       >
-        <div className="brand">MLN122 • E-BOOK</div>
+        <div className="brand">E-BOOK</div>
 
         <label className="nav-sel-wrap" aria-label="Chuyển màn">
           <select
             className="nav-select"
             value={current}
-            onChange={(e)=> navigate(e.target.value)}
+            onChange={(e) => navigate(e.target.value)}
           >
             {PAGES.map(p => (
               <option key={p.path} value={p.path}>{p.label}</option>

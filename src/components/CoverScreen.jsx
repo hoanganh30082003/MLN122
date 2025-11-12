@@ -19,7 +19,7 @@ const CoverScreen = () => {
     const navigate = useNavigate();
     const handleDiscoverClick = () => {
         // DÒNG 3: ĐIỀU HƯỚNG TỚI SCREEN 2 KHI CLICK
-        navigate('/screen-2');
+        navigate('/historical-context');
     };
     return (
         <motion.div

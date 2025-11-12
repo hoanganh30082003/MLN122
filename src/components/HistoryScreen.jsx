@@ -204,10 +204,9 @@ export default function HistoryScreen() {
         </motion.div>
 
         <div className="hc-actions">
-          <Link className="btn btn-outline hover-lift" to="/screen-3">Sang giai đoạn 1986–1995 →</Link>
+          <Link className="btn btn-outline hover-lift" to="/opening-era">Sang giai đoạn 1986–1995 →</Link>
         </div>
 
-        <div className="footnote">* Một số chỉ dấu/số liệu mang tính khái quát để minh hoạ bối cảnh.</div>
       </div>
     </section>
   );
