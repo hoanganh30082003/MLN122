@@ -49,6 +49,12 @@ const ConclusionScreen = () => {
         <motion.div className={styles.credits} variants={itemVariants}>
           <p >Nguồn Tham Khảo & Dữ Liệu</p><br />
           <a href=" https://data.worldbank.org">Vietnam Data Profile & Vietnam Development Report</a>
+          <a href=" https://www.customs.gov.vn/index.jsp?aid=211859&cid=4208&pageId=2281&utm_source=chatgpt.com">VietName Customs</a>
+          <a href=" https://vnftgroup.com/vietnam-exports-in-2025-trade-surplus-exceeds-13-billion-usd/">VNFT Group</a>
+          <a href=" https://www.nso.gov.vn/en/data-and-statistics/2021/05/electronic-goods-computers-and-their-parts-are-firmly-at-second-place-in-the-main-goods-for-exportation-of-viet-nam/">National Statistics Office</a>
+          <a href=" https://www.vietnam-briefing.com/news/vietnams-electronics-industry-guide-emerging-opportunties.html/">Vietnam Briefing</a>
+          <a href=" https://vietnamnews.vn/economy/1721184/2025-coffee-exports-hit-target-set-for-record-7-5-billion.html?utm_source=chatgpt.com">Vietnam News</a>
+
         </motion.div>
 
       </motion.div>
