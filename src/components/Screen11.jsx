@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaCity, FaHeartbeat, FaChartLine, FaLeaf, FaSmile } from "react-icons/fa";
+import { FaCity, FaHeartbeat, FaChartLine, FaLeaf } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import vietnamGrowth from "../assets/images/background.jpg";
 import "../assets/styles/Screen11.css";

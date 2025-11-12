@@ -3,14 +3,6 @@ import styles from '../assets/styles/CoverScreen.module.css';
 import logoCover from '../assets/images/logo_cover.png';
 import backgroundImage from '../assets/images/background_cover.png';
 import { useNavigate } from 'react-router-dom';
-const DecorativeLine = ({ delay }) => (
-    <motion.div
-        className={styles.decorativeLine}
-        initial={{ width: 0, opacity: 0 }}
-        animate={{ width: '100%', opacity: 1 }}
-        transition={{ duration: 0.8, delay, ease: 'easeOut' }}
-    />
-);
 
 const CoverScreen = () => {
     const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.25 } } };

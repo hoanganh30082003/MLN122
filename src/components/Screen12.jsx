@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -11,28 +11,7 @@ import {
 import thornbg from "../assets/images/struggles.jpg";
 import "../assets/styles/Screen12.css";
 
-/* Counter nhẹ nhàng cho các số liệu */
-function Counter({ to = 1000, duration = 900, suffix = "" }) {
-  const [val, setVal] = useState(0);
-  const start = useRef(null);
-  useEffect(() => {
-    let raf;
-    const step = (ts) => {
-      if (!start.current) start.current = ts;
-      const p = Math.min(1, (ts - start.current) / duration);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setVal(Math.floor(eased * to));
-      if (p < 1) raf = requestAnimationFrame(step);
-    };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
-  }, [to, duration]);
-  return (
-    <span className="highlight">
-      {val.toLocaleString()} {suffix}
-    </span>
-  );
-}
+/* Counter used in other screens; removed here because it's not used in this file to avoid ESLint unused warning. */
 
 const CHALLENGES = [
   {
