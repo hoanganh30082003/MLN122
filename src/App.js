@@ -8,6 +8,8 @@ import FactoryScreen from './components/FactoryScreen';
 import RegionalScreen from './components/RegionalScreen';
 import FutureScreen from './components/FutureScreen';
 import AgroScreen from './components/AgroScreen';
+import Screen11 from './components/Screen11';
+import Screen12 from './components/Screen12';
 import CoverScreen from './components/CoverScreen';
 import ConclusionScreen from './components/ConclusionScreen'; 
 
@@ -28,6 +30,8 @@ function AppContent() {
         <Route path="/factory" element={<FactoryScreen />} />
         <Route path="/future" element={<FutureScreen />} />
         <Route path="/agro" element={<AgroScreen />} />
+        <Route path="/screen-11" element={<Screen11/>}/>
+        <Route path="/screen-12" element={<Screen12/>}/>
         <Route path="/conclusion" element={<ConclusionScreen />} />
       </Routes>
     </>

@@ -10,6 +10,8 @@ const PAGES = [
   { path: "/factory",  label: `"Công Xưởng" Mới` },
   { path: "/future",   label: "Tương lai Việt Nam" },
   { path: "/agro",     label: "Nông nghiệp & Công nghệ" },
+  { path: "/screen-11", label: "Gặt hái trái ngọt"},
+  { path: "/screen-12", label: "Chông gai phía trước"},
 ];
 
 export default function Nav(){
