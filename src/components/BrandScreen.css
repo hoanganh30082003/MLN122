@@ -1,0 +1,142 @@
+/* components/BrandScreen.css */
+
+.brand-screen {
+  min-height: 100vh;
+  background: #FDF4E3;
+  font-family: 'Sans-serif', sans-serif;
+  color: #4A5568;
+  padding: 6rem 1rem 4rem;
+}
+
+.screen-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.screen-title {
+  font-family: 'VNI Lanh', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #C53030;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.screen-subtitle {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #D69E2E;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* DESKTOP: 2 hàng x 4 card */
+.brands-grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .brands-grid-desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE: Swipe ngang */
+.brands-carousel {
+  display: none;
+  overflow: hidden;
+  user-select: none;
+  margin: 2rem 0;
+}
+
+.brands-track {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  cursor: grab;
+}
+
+.brand-card {
+  min-width: 300px;
+  max-width: 300px;
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.brand-logo {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #D69E2E;
+}
+
+.brand-name {
+  font-family: 'VNI Lanh', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  color: #C53030;
+}
+
+.brand-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #718096;
+  margin: 0;
+}
+
+.drag-hint {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #718096;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .brands-grid-desktop {
+    display: none;
+  }
+
+  .brands-carousel {
+    display: block;
+  }
+
+  .screen-title {
+    font-size: 2.2rem;
+  }
+
+  .brand-card {
+    min-width: 270px;
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .screen-title {
+    font-size: 1.9rem;
+  }
+
+  .brand-card {
+    min-width: 250px;
+    padding: 1.5rem 1rem;
+  }
+
+  .brand-logo {
+    font-size: 3rem;
+  }
+}

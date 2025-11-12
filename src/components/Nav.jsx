@@ -9,6 +9,7 @@ const PAGES = [
   { path: "/phase-2", label: "Vươn Ra Khu Vực" },
   { path: "/factory",  label: `"Công Xưởng" Mới` },
   { path: "/fdi",      label: "Dòng vốn FDI" },
+  { path: "/brands", label: "Thương Hiệu Việt" },
   { path: "/future",   label: "Tương lai Việt Nam" },
   { path: "/agro",     label: "Nông nghiệp & Công nghệ" },
   { path: "/screen-11", label: "Gặt hái trái ngọt"},
