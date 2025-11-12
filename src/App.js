@@ -13,7 +13,7 @@ import Screen12 from './components/Screen12';
 import CoverScreen from './components/CoverScreen';
 import ConclusionScreen from './components/ConclusionScreen'; 
 import FdiScreen from "./components/FdiScreen";
-
+import BrandScreen from "./components/BrandScreen";
 function AppContent() {
   const location = useLocation();
   const isCoverPage = location.pathname === '/screen-1' || location.pathname === '/conclusion';
@@ -35,7 +35,8 @@ function AppContent() {
         <Route path="/screen-11" element={<Screen11/>}/>
         <Route path="/screen-12" element={<Screen12/>}/>
         <Route path="/conclusion" element={<ConclusionScreen />} />
-      </Routes>
+<Route path="/brands" element={<BrandScreen />} />
+      </Routes> 
     </>
   );
 }
