@@ -23,7 +23,7 @@ function AppContent() {
       {!isCoverPage && <Nav />}
 
       <Routes>
-        <Route path="/" element={<Navigate to="/screen-1" replace />} />
+        <Route path="/" element={<Navigate to="/opening" replace />} />
         <Route path="/opening" element={<CoverScreen />} />
         <Route path="/historical-context" element={<HistoryScreen />} />
         <Route path="/opening-era" element={<ReformScreen />} />
