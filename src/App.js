@@ -12,6 +12,7 @@ import Screen11 from './components/Screen11';
 import Screen12 from './components/Screen12';
 import CoverScreen from './components/CoverScreen';
 import ConclusionScreen from './components/ConclusionScreen'; 
+import FdiScreen from "./components/FdiScreen";
 
 function AppContent() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function AppContent() {
         <Route path="/screen-3" element={<ReformScreen />} />
         <Route path="/phase-2" element={<RegionalScreen />} />
         <Route path="/factory" element={<FactoryScreen />} />
+        <Route path="/fdi" element={<FdiScreen />} />
         <Route path="/future" element={<FutureScreen />} />
         <Route path="/agro" element={<AgroScreen />} />
         <Route path="/screen-11" element={<Screen11/>}/>
